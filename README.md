@@ -15,8 +15,8 @@ This script does an action inside the windows device, which is to copy the passw
 
 
 
-If you want to use stealth and hide, you can use powershall, and this repo [Here](https://github.com/luke-manzo/USB-Rubber-Ducky-Obtain-Wifi-Passwords-and-Export-Them-VIA-Email.git
-) will teach you how to send files, copy files, send them to your email, hide your trace, and leave no trace behind.
+If you want to use stealth and hide, you can use powershall, and this repo [Here](https://github.com/Abo5/USB-Rubber-Ducky-Obtain-Wifi-Passwords-and-Export-Them-VIA-TELEGRAM-BOT/blob/main/payload-with-powershell.txt) or [Here](https://github.com/luke-manzo/USB-Rubber-Ducky-Obtain-Wifi-Passwords-and-Export-Them-VIA-Email.git) 
+will teach you how to send files, copy files, send them to your email, hide your trace, and leave no trace behind.
 
 ## This script is educational only
 
