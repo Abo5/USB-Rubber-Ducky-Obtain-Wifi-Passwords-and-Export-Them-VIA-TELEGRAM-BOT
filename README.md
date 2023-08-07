@@ -3,7 +3,7 @@
 # ducky-script-to-send-wifi-password-via-telegram-bot
 The following script will allow us to obtain network names and WiFi passwords and export them via Telegram bot.
 
-first go to this website ( https://ducktoolkit.com/encoder/ ) and edit in line 53 * Replace your bot token here <BOT-TOKEN> and chat_id <CHAT-ID> * and make sure is correct and 
+first go to this website ( https://ducktoolkit.com/encoder/ ) and edit in line 53 * Replace your bot token here <BOT-TOKEN> and chat_id <CHAT-ID> * and make sure is correct or you can visit to my bot in telegram and the [bot](https://t.me/DuckyEncodebot) will encode the payload for you 
 
 Welcome, you are on my page now. If you want to reach me out with me, click on this link, and it will direct you directly to now. Let us go into the depth of the matter....
 Hi, I'm a Nazi, I love Ruby, and also a ducky script. I created this repo for you, my friend. Now I'm going to explain to you what this script does simply 
